@@ -1,0 +1,43 @@
+﻿<Window x:Class="_6BP_OudouoirGuillaume_SOTrim2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_6BP_OudouoirGuillaume_SOTrim2"
+        mc:Ignorable="d"
+        Title="OEF1" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblToevoegen" Content="Toevoegen" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="lblNaam" Content="Naam:" HorizontalAlignment="Left" Margin="63,49,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSoort" Content="Soort:" HorizontalAlignment="Left" Margin="66,75,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAantalPillenPerDoos" Content="Aantal per doos:" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblVoorschrift" Content="Voorschrift:" HorizontalAlignment="Left" Margin="37,160,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbNaamNew" HorizontalAlignment="Left" Margin="107,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txbAantalNew" HorizontalAlignment="Left" Margin="107,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cmbSoort" HorizontalAlignment="Left" Margin="107,75,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <RadioButton x:Name="rbnVoorschriftYES" Content="JA" HorizontalAlignment="Left" Margin="107,166,0,0" VerticalAlignment="Top" IsChecked="True" GroupName="Voorschrift"/>
+        <RadioButton x:Name="rbnVoorschriftNO" Content="NEEN" HorizontalAlignment="Left" Margin="161,166,0,0" VerticalAlignment="Top" GroupName="Voorschrift"/>
+        <Button x:Name="btnVoegToe" Content="Voeg Toe" HorizontalAlignment="Left" Margin="107,186,0,0" VerticalAlignment="Top" Width="120" Click="btnVoegToe_Click"/>
+        <Label x:Name="lblDozenAmount" Content="Aantal dozen:" HorizontalAlignment="Left" Margin="25,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbAantalDozenNew" HorizontalAlignment="Left" Margin="107,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" VerticalContentAlignment="Center"/>
+        <ListBox x:Name="lsbMedicijnen"  Margin="444,10,0,0" HorizontalAlignment="Left" Width="275" Height="371" VerticalAlignment="Top"/>
+        <Button x:Name="btnLsbView" Content="Toon Medicijnen" HorizontalAlignment="Left" Margin="444,386,0,0" VerticalAlignment="Top" Height="23" Width="275" Click="btnLsbView_Click"/>
+        <Label x:Name="lblOphalen" Content="Ophalen" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <ComboBox x:Name="cmbNaamList" HorizontalAlignment="Left" Margin="102,260,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label x:Name="lblNaam_Copy" Content="Naam:" HorizontalAlignment="Left" Margin="58,260,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAantalPillen" Content="Aantal pillen:" HorizontalAlignment="Left" Margin="25,286,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbAANtalPillenAF" HorizontalAlignment="Left" Margin="102,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnaftrekken" Content="Aftrekken" HorizontalAlignment="Left" Margin="102,317,0,0" VerticalAlignment="Top" Click="btnaftrekken_Click" Width="120"/>
+        <Button x:Name="btnRestock" Content="Voeg Toe" HorizontalAlignment="Left" Margin="319,106,0,0" VerticalAlignment="Top" Height="26" Width="120" Click="btnRestock_Click"/>
+        <Label x:Name="lblToevoegen2" Content="Restock" HorizontalAlignment="Left" Margin="233,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="lblNaam_Copy1" Content="Naam:" HorizontalAlignment="Left" Margin="275,49,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbNaamRestock" HorizontalAlignment="Left" Margin="319,49,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label x:Name="lblDozenAmountRestock" Content="Aantal dozen:" HorizontalAlignment="Left" Margin="237,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbAantalDozenRestock" HorizontalAlignment="Left" Margin="319,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblZoeken" Content="Zoeken" HorizontalAlignment="Left" Margin="230,226,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="lblNaamZoeken" Content="Naam:" HorizontalAlignment="Left" Margin="275,260,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxbZoekenNaam" HorizontalAlignment="Left" Margin="319,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" VerticalContentAlignment="Center"/>
+        <Button x:Name="BtnZoeken" Content="Zoeken" HorizontalAlignment="Left" Margin="319,289,0,0" VerticalAlignment="Top" Height="23" Width="120" Click="BtnZoeken_Click"/>
+
+    </Grid>
+</Window>
